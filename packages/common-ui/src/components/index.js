@@ -1,0 +1,1 @@
+export {default as DetailHotel } from './detailHotel/DetailHotel.vue'

@@ -1,0 +1,25 @@
+{
+   "name": "common-ui",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+   "files": [
+      "dist"
+   ],
+   "main": "./dist/common-ui.umd.js",
+   "module": "./dist/common-ui.es.js",
+   "exports": {
+      ".": {
+         "import": "./dist/common-ui.es.js",
+         "require": "./dist/common-ui.umd.js"
+      }
+   },
+   "scripts": {
+      "dev": "npm run lint & vite build --mode development",
+      "build": "npm run lint & vite build",
+      "lint": "eslint . --ext js,jsx,vue --report-unused-disable-directives --max-warnings 0",
+      "preview": "vite preview"
+   },
+   "dependencies": {},
+   "devDependencies": {}
+}
